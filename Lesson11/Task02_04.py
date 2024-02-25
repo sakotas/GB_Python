@@ -20,7 +20,7 @@ class Archive:
             cls._instance.all_name = []
         else:
             cls._instance.all_text.append(cls._instance.text)
-            cls._instance.all_name.append(cls._instance.name)
+            cls._instance.all_name.append(cls._instance.author)
         return cls._instance
 
     def __init__(self, text: str, name: str):
